@@ -1,0 +1,140 @@
+h1.speciale.animated.fadeIn.delay08 {
+    color: white;
+    background-color: #ca470580;
+}
+p.aucworld {
+    font-family: Crimson Text;
+    font-size: 18px;
+}
+.category.col-xs-12.col-sm-6.col-md-4.col-lg-4.hidden-xs {
+    max-height: 69px;
+}
+p.aucdirect.animated.fadeIn.delay12 {
+    color: white;
+    background-color: #ca470580;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -5px;
+    font-family: georgia,sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+.hover-container.touchme {
+    max-height: 69px;
+}
+a.canadant {
+    color: white;
+}
+a.usant {
+    color: white;
+}
+div#canadant {
+    max-height: 69px;
+}
+div#usant {
+    max-height: 69px;
+}
+
+.canusa {
+    border: 0;
+    border-top: 1px solid white;
+}
+table.table.table-condensed {
+    font-size: 14px;
+}
+.product .hover-container h2 {
+    opacity: 1;
+    margin-top: -24px;
+}
+h5.usafeat {
+    color: white;
+}
+h5.canfeat {
+    color: white;
+}
+.category-container {
+    text-align: center;
+    color: white;
+    background-color: #ca4705;
+    min-height: 30px;
+    padding-top: 13px;
+    text-decoration: none;
+}
+ooter#footer {
+    background-color: #f5f0d8;
+    color: black;
+    padding-top: 54px;
+}
+
+footer p.emailtxt a {
+    color: black;
+}
+
+.footer-padder2 {
+    margin-left: 120px;
+}
+div#credits {
+    text-align: center;
+}
+li.social a {
+    color: black;
+}
+footer.auctiondate {
+    background-color: white;
+    margin-top: -16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.aucDate {
+    text-align: center;
+    color: black;
+}
+div#event-right {
+    margin-top: 40px;
+}
+h3.event {
+    color: #333;
+}
+.category2 {
+    background-color: #ca4705;
+   margin-top:-27px; 
+}
+
+.annullaskew p {
+    min-height: 200px;
+    line-height: 22px;
+}
+span.auciontype{
+    border-style: solid;
+    border-radius: 36px;
+    border-width: 1px;
+    padding: 1px 3px 1px 3px;
+    color: #944905;
+    font-size: 10px;
+    margin-right: 15px;
+}
+div.aucDate span {
+    margin-left: 8px;
+    margin-right: -10px;
+}
+ul.canbest {
+    list-style-type: circle;
+    text-decoration: none;
+}
+ul.canbest a{
+color:black;
+}
+@media (min-width: 768px)
+{
+.tab-slide .carousel-inner>.item>img {
+    width: 768px;
+    height: 400px;
+    max-width: none;
+    position: relative;
+    right: auto;
+    margin-right: 0;
+    left: 40%;
+    margin-left: 0;
+}
+}

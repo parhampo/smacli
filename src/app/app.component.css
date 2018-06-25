@@ -1,0 +1,46 @@
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    line-height: inherit;
+    white-space: nowrap;
+    border-style: solid;
+}
+ul.navbar-nav.mr-auto li {
+    
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 40px;
+    border-right-style: groove;
+    border-color: white;
+}
+ul.navbar-nav.mr-auto li a {
+    color:  white;
+    text-decoration: navajowhite;
+}
+a.lead-link{
+    background: url(../assets/images/downarrow.png) no-repeat;
+    width: 50px;
+    height: 72px;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -125px;
+    margin-left: -22px;
+    z-index: 4;
+    opacity: 0.9;
+    animation: 1.9s ease-out normal none infinite floating;
+    -webkit-animation: 1.9s ease-out normal none infinite floating;
+}
+footer#footer {
+    background-color: #f5f0d8;
+    padding-top: 25px;
+}
+p.terms {
+    text-align: center;
+}
+.footer-padder2{
+    margin-left: 120px;
+}

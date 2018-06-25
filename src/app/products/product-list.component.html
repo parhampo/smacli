@@ -1,0 +1,153 @@
+<div id="makeReservation" class="step1" style="visibility: inherit; opacity: 1;">     
+	<div id="reservation-header" style="transform: matrix(1, 0, 0, 1, 0, 0);"><div class="step-header cf">
+		<div class="step-date cf">
+				<div class="left">
+						<div class="post-selection cf" style="opacity: 1; display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+								<div class="selected-date-small">
+										<div class="calendar-icon"></div>
+										<a href="javascript:history.back()">
+											<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+								</div>
+						</div>
+						<div class="selected-text title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+								<img src="assets/images/auchammer.svg" style="width:20px; height:20px;margin-bottom: 0px;" />
+								<span>SELECT AN AUCTION</span>
+						</div>
+				</div>
+
+			 </div>
+</div>
+</div>
+	
+		<div class="container-fluid">
+		  <div class="row">
+				<div class="col-sm-3 col-md-3 d-none d-sm-block bg-light sidebar" id="filter-pane">
+					<section id="step-one" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+				
+				<div class="auctiontype form-group">
+				<!--		<div class="ui checkbox eventType">
+								<label>Auction Location:</label>
+								<input type="text" [(ngModel)]="listFilter2" tabindex="0"  class="input">
+								<button class="btn btn-sm btn-outline-primary" (click)="selectToday()">Select Today</button>
+						</div>
+
+
+						<ngbd-datepicker-basic  #dp   (navigate)="listFilter2 = $event.next"></ngbd-datepicker-basic> 
+						
+
+				</div>
+				<div>-->
+					<form class="form-inline">
+						<table class="table table-condensed">
+						<div class="form-group">
+						  <div class="input-group">
+								<tr class="noborder"><td>
+										
+												<span class="glyphicon glyphicon-cog" aria-hidden="true"></span><span style="color:brown">Status:</span>
+												<span style="color:rgb(231, 28, 28)">All Auctions</span>
+												<span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+											  
+													
+									</td>  
+							<tr class="nob"><td>
+								  <span>Use these filters to narrow your search</span>
+							  </td>
+
+							  </tr>
+							  <tr>
+								  <td>
+										<input class="form-control" placeholder="location" name="loc" id="loc"
+										[(ngModel)]="listFilter3">
+								  </td>
+							  </tr>
+							  <tr>
+								<td>
+									  <span class="calndar"> OR CALENDAR </span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+										<input class="form-control" placeholder="yyyy-mm-dd" id="dp"
+										name="dp" [(ngModel)]="model" ngbDatepicker 
+										#d="ngbDatepicker" (change)="toggle()">
+										<button class="input-group-addon" (click)="d.toggle()" (focus)="toggle()" type="button" name="btn-toggle" id="btn-toggle">
+											<img src="assets/images/calendar-icon.svg" style="width: 20px; height: 20px; cursor: pointer;margin-left:-9px;"/>
+										  </button>
+								</td>
+							</tr>
+						
+							</div>
+							<tr>
+								<td>
+								<input-calendar [listFilter2]="listFilter"></input-calendar> 
+								</td>
+							</tr>
+							
+							
+						</div>
+					</table>
+					  </form>
+				</div>
+				
+					</section>
+
+					
+				</div>
+	
+			<div class="col-sm-9 ml-sm-auto col-md-9 pt-3" id="venue-selection-pane" style="visibility: inherit; opacity: 1; display: block;">
+				
+	  
+				  <section>
+					  <div class="container" id="secpane">
+							  
+							  
+						<ul class="row" style="list-style: none;">
+							<li class="col-sm-4" *ngFor='let product of products | productFilter:listFilter:listFilter3'>
+								 <article class="auction-list news">		   
+								  <header class="auction-header" id="listingheader">
+								  <div class="location">
+									{{product.productName}} 
+								  </div>
+								  <span class="auciontype">
+										{{product.auctype}}</span><span id="Auclisting">	{{product.releaseDate}}		
+										</span>
+								  </header>		   
+									
+								   <div class="art-links">
+										<a [routerLink]="['/product',product.id]" 
+										[queryParams]="{filterBy: product.releaseDate}">
+														 
+														 <span class="icon-open icon"></span>
+														 <span class="link-label">{{product.website}}</span>
+														 
+										</a>   
+									  </div>
+								   
+								   
+								   
+									<img width="360" height="360" [src]='product.coverimg' class="img-responsive hidden-xs wp-post-image" 
+									alt="" [srcset]='product.coverimg' sizes="(max-width: 360px) 100vw, 360px"> 	 
+														
+									
+								</article>	
+								<footer class="auctiondate">
+										<div class="aucDate"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+												{{product.address}}{{product.city}} {{product.zip}} 
+
+										</div>
+									
+										</footer>	 	   			
+							</li>			
+													  
+							</ul>
+					 </div>
+			  
+			  
+			  </section>
+
+			   
+		  </div>
+		  </div>
+		</div>
+		</div>

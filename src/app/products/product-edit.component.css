@@ -1,0 +1,112 @@
+.form-group label {
+    color: #ca4705;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+form.editForm {
+    margin-top: 23px;
+    margin-left: 20px;
+}
+.container.desc {
+    position: relative;
+    bottom: 380px;
+    height: 100%;
+    z-index: 2;
+}
+
+div#credits {
+    text-align: center;
+}
+li.social a {
+    color: black;
+}
+footer.auctiondate {
+    background-color: white;
+    margin-top: -16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.aucDate {
+    text-align: center;
+    color: black;
+}
+div#event-right {
+    margin-top: 40px;
+}
+h3.event {
+    color: #333;
+}
+.category2 {
+    background-color: #ca4705;
+   margin-top:-27px; 
+}
+.news-content p {
+    min-height: 400px;
+}
+.titlelocation h4 {
+    font-size:  16px;
+    line-height:  22px;
+    float:left;
+}
+.titlelocation span.glyphicon.glyphicon-map-marker {
+    float: left;
+}
+span.roundspan {
+    border-width: 1px;
+    font-size: 10px;
+    margin-left: 6px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 3px;
+}
+.category-container h5{
+    text-align: center;
+    background-color: #ca4705;
+    min-height: 30px;
+    padding-top:10px;
+    text-decoration: none;
+}
+
+.category-container a {
+    text-decoration: none;
+    text-decoration-color: yellow;
+}
+input.hid-text {
+    visibility: hidden;
+}
+.carousel-item .container.desc {
+    position: relative;
+    bottom: 380px;
+    height: 100%;
+    z-index: 2;
+}
+
+@media (min-width: 992px){
+.sfondo-pagina{
+    background-position: top center;
+}
+.container {
+    width: 970px;
+
+}
+.carousel-indicators {
+    bottom: 382px!important;
+}
+}
+
+@media screen and (min-width: 768px){
+.sfondo-pagina{
+    background-attachment: fixed;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+}
+.nav .nav-pills .carousel-indicators li.active{
+    margin: 0 20px 0 5px;
+    width: 10px;
+    height: 10px;
+    border: 4px none #fcfafa;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0 5px #f3f3f0fb!important;
+
+}

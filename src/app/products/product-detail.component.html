@@ -1,0 +1,297 @@
+<div id="makeReservation" class="step1" style="visibility: inherit; opacity: 1;" *ngIf='product'>  
+<div id="reservation-header" style="transform: matrix(1, 0, 0, 1, 0, 0);"><div class="step-header cf">
+	<div class="step-date cf">
+		<div class="left">
+			<div class="post-selection cf" style="opacity: 1; display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div class="selected-date-small">
+					<div class="calendar-icon"></div>
+					<a href="javascript:history.back()">
+						<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+				</div>
+			</div>
+			<div class="selected-text title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div class="calendar-icon"></div>
+				<div class="rooftop-icon"></div><strong><span>Auction Name:</span></strong>
+				<span style="color:black">{{product.productName}}</span><span class="roundspan">{{product.auctype}}</span>
+				</div>
+		</div>
+
+	</div>
+</div>
+</div>
+<div class="container" >
+	<div class="row" *ngIf='product'>
+	  <div class="col-sm-12" id="auctiondetails">
+		<article class="news-grande singola">
+		  <header class="auction-header">
+			<div class="side-titolo">
+			  <time class="published" datetime="2014-07-01T10:20:11+00:00">08<span class="mese">{{product.releaseDate}} </span></time>
+			  <h4>
+				{{product.productName}}</h4><h6 style="color:#a9524c; padding-top:10px">{{product.auctype}} Auction</h6>
+				</div>
+			<div class="side-likes hidden-xs">
+					<div class="titlelocation" data-layout="button_count">
+						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><h5>{{product.address}}<br>{{product.city}}<br>{{product.state}}<br>{{product.zip}}</h5>
+						</div>
+						</div>
+		  </header>
+		  <ngb-carousel>
+			<ng-template ngbSlide>
+			<figure class="responsive">
+			  <img [src]='product.imageUrl[0]'></figure>
+			  <div class="carousel-caption">
+			   
+			  </div>
+			</ng-template>
+			<ng-template ngbSlide>
+			<figure class="responsive">
+			  <img [src]='product.imageUrl[1]' alt="Random second slide"></figure>
+			  <div class="carousel-caption">
+			   
+			  </div>
+			</ng-template>
+			<ng-template ngbSlide>
+			<figure class="responsive">
+			  <img [src]='product.imageUrl[2]' alt="Random third slide"></figure>
+			  <div class="carousel-caption">
+				
+			  </div>
+			</ng-template>
+			<ng-template ngbSlide>
+			<figure class="responsive">
+			  <img [src]='product.imageUrl[3]' alt="Random third slide"></figure>
+			  <div class="carousel-caption">
+				
+			  </div>
+			</ng-template>
+			<ng-template ngbSlide>
+			<figure class="responsive">
+			  <img [src]='product.imageUrl[4]' alt="Random third slide"></figure>
+			  <div class="carousel-caption">
+				
+			  </div>
+			</ng-template>
+	</ngb-carousel>
+	<!-- #endregion Jssor Slider End -->
+			
+		  <div class="row" id="event-row">
+			<div class=" col-sm-7 col-md-8  ">
+			  <div class="news-content">
+					<p>{{product.description}}</p>
+				
+						 </div>
+			</div>
+			  <div class="col-sm-5 col-md-4" id="event-right">
+			  <div class="event-content">
+				<h3 class="event">Auction Map</h3>
+				<a href="https://www.google.com/maps/dir//toronto/">
+				<img src="assets/images/staticmap.png" alt="Google Map of toronto"></a>
+				
+				</div>
+				</div>
+		</div>
+		</article>
+	  </div>
+	</div>
+  </div>
+	</div>
+	
+	<section id="collegamenti" class="carousel slide tab-slide" data-ride="carousel" *ngIf='product'>
+		<!-- Indicators -->
+	
+	<div class="container-pills">
+	<div class="container ">
+	<ol class="nav nav-pills carousel-indicators">
+		<li class="active" data-target="#collegamenti" data-slide-to="0"><a href="http://www.showmeauctions.com/#">Information</a></li>
+		<li data-target="#collegamenti" data-slide-to="1"><a href="http://www.showmeauctions.com/#">Highlights</a></li>
+		<li data-target="#collegamenti" data-slide-to="2"><a href="http://www.showmeauctions.com/#">Extra Notes</a></li>
+	</ol>
+	</div>
+	</div>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+	
+	
+		 <img class="visible-xs visible-sm" src="assets/images/antpic1400b.jpg" alt="" width="1137" height="600">
+		 <img class="visible-md visible-lg" src="assets/images/antpic1400b.jpg" alt="" width="1400" height="729">
+	
+				<div class="tab-slide-caption">
+				<div class="container">
+				<div class="row">
+				<div class="col-md-6">
+				<div class="annullaskew">
+					<h3>Date, Time, Payment & more</h3>
+					<ul class="feature">
+					<table claee="table table-condensed">
+						<tr>
+							<td>
+									<li> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{product.address}}</li>
+							</td>
+						</tr>
+					<tr>
+						<td>
+								<li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{product.time}}</li>
+						</td>
+					</tr>
+					<tr>
+							<td>
+									<li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+										<a [routerLink]="['/defaultauction',product.id]" ><span style="color:#5e1814">{{product.website}}</span></a></li>
+							</td>
+						</tr>
+						<tr>
+								<td>
+										<li><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>{{product.terms}}</li>
+								</td>
+							</tr>
+							<tr>
+									<td>
+											<li><span class="glyphicon glyphicon-plane" aria-hidden="true"></span>{{product.shipping}}</li>	
+									</td>
+								</tr>
+								<tr>
+										<td>
+												<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>{{product.tel}}</li>		
+										</td>
+									</tr>
+									<tr>
+											<td>
+													<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>{{product.email}}</li>	
+											</td>
+										</tr>
+					</table>
+				</ul>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+			</div>
+	
+	
+			<div class="item">
+	
+		 <img class="visible-xs visible-sm" src="assets/images/antpic1500b.jpg" alt="ShowMeAuctions" width="1137" height="600">
+		 <img class="visible-md visible-lg" src="assets/images/antpic1500b.jpg" alt="ShowMeAuctions" width="1400" height="729">
+	
+	
+				<div class="tab-slide-caption">
+				 <div class="container">
+					<div class="row">
+				<div class="col-md-6">
+				<div class="annullaskew">
+	
+					<h3>Auction Highlights</h3>
+				<em>{{product.productName}}</em>
+				<ul style="list-style-type:none;padding-left:5px">
+					<li> {{product.Highlights[0]}}</li>
+					<li> {{product.Highlights[1]}}</li>
+					<li> {{product.Highlights[2]}}</li>
+					<li> {{product.Highlights[3]}}</li>
+				</ul>
+	
+				 </div>
+				</div>
+					</div>
+				</div>
+				</div>
+			</div>
+	
+			<div class="item">
+	
+		 <img class="visible-xs visible-sm" src="assets/images/antpic1400b.jpg" alt="ShowMeAuctions" width="1137" height="600">
+		 <img class="visible-md visible-lg" src="assets/images/antpic1400b.jpg" alt="ShowMeAuctions" width="1400" height="729">
+	
+	
+				<div class="tab-slide-caption" *ngIf="product">
+				 <div class="container">
+					<div class="row">
+				<div class="col-md-6">
+							<div class="annullaskew">
+	
+								<h3>Extra Notes</h3>
+								<p><em>{{product.productName}}</em> {{product.note}}. </p>
+								<p><a href="http://www.showmeauctions.com">Learn more</a></p>
+								
+				
+				 </div>
+				</div>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+	
+		</div>
+	
+	
+	</section>
+
+<section class="mid-content" *ngIf='product'>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="category2  col-lg-12">
+        		
+           			 <div class="category-container">
+            		
+            			<h5 class="canfeat">You may also like</h5>
+                	<!--/.category-content -->
+           		 	</div><!--/.category-container -->
+    </div><!--/.category-->
+	</div>
+	<div class="container" id="secpane">
+			<ul class="row" style="list-style: none;" *ngIf="products && products.length">
+				<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3" *ngFor='let product of products'>
+					<article class="auction-list news">		   
+						<header class="auction-header" id="listingheader">
+						<div class="location">
+				{{product.productName}} 
+				</div>
+				<span class="auciontype">
+					{{product.auctype}}</span><span id="Auclisting">	{{product.releaseDate}}		
+					</span>
+				</header>		   
+				
+				 <div class="art-links">
+					<a [routerLink]="['/product',product.id]" 
+					[queryParams]="{filterBy: product.releaseDate}">
+					<span class="icon-open icon"></span>
+					<span class="link-label">{{product.website}}</span>
+					 </a>      
+					</div>
+				 			 
+				<img width="360" height="360" [src]='product.coverimg' class="img-responsive hidden-xs wp-post-image" 
+				alt="" [srcset]='product.coverimg' sizes="(max-width: 360px) 100vw, 360px"> 	 
+									
+				
+			</article>	
+			<footer class="auctiondate">
+					<div class="aucDate">
+							{{product.address}}
+
+					</div>
+				
+					</footer>	 	   			
+		</li>			
+									
+		</ul>
+		</div><!--/.row-->
+		<div class="category-container">
+						
+						<a href="javascript:history.back()">
+						<h5 class="canfeat">Back to Shop</h5>
+						</a>
+						<!--/.category-content -->
+							</div>
+				
+						</div><!--/.container-fluid -->
+</section><!--/.mid-content -->
+
+
+ 
+  <!-- Replace the value of the key parameter with your own API key. -->
+  
+																		   
+
+<input type="text"	[(ngModel)]="listFilter2" class="hid-text"/>

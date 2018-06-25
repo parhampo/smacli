@@ -1,0 +1,90 @@
+footer#footer {
+    background-color: #f5f0d8;
+    color: black;
+    padding-top: 54px;
+}
+
+footer p.emailtxt a {
+    color: black;
+}
+
+.footer-padder2 {
+    margin-left: 120px;
+}
+div#credits {
+    text-align: center;
+}
+li.social a {
+    color: black;
+}
+footer.auctiondate {
+    background-color: white;
+    margin-top: -16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.aucDate {
+    text-align: center;
+    color: black;
+}
+div#event-right {
+    margin-top: 40px;
+}
+h3.event {
+    color: #333;
+}
+.category2 {
+    background-color: #ca4705;
+   margin-top:-27px; 
+}
+span.auciontype{
+    border-style: solid;
+    border-radius: 36px;
+    border-width: 1px;
+    padding: 1px 3px 1px 3px;
+    color: #944905;
+    font-size: 10px;
+    margin-right: 15px;
+}
+div.aucDate span {
+    margin-left: 8px;
+    margin-right: -10px;
+}
+ul.canbest {
+    list-style-type: circle;
+    text-decoration: none;
+}
+ul.canbest a{
+color:black;
+}
+.category-container{
+text-align: center;
+background-color: #ca4705;
+min-height: 30px;
+padding-top: 10px;
+text-decoration: none;
+}
+h5.usafeat {
+    color: white;
+}
+@media (min-width: 768px) and (min-width: 992px){
+.tab-slide .tab-slide-caption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    background: transparent;
+    margin-top: 0;
+}}
+@media (min-width: 768px) and (min-width: 992px){
+.tab-slide .carousel-inner>.item>img {
+    width: 768px;
+    height: 400px;
+    max-width: none;
+    position: relative;
+    right: auto;
+    margin-right: 0;
+    left: 40%;
+    margin-left: 0;
+}}

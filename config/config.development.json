@@ -1,0 +1,9 @@
+{
+    "databaseConfig": {
+        "host": "localhost",
+        "database": "products",
+        "dbuser":"myproduct",
+        "dbpassword":"Myproduct.1",
+        "mlab":"@ds251889.mlab.com:51889"
+    }
+}
